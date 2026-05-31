@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nish22</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+      <h1>Happy Birthday, Nishtha</h1>
+      <p class="sub">
+        There's a quiz for you. You must score at least <strong>5 out of 6</strong> to unlock a surprise video at the end.
+      </p>
+      <button id="startBtn">Let's Begin</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quizSection" class="hidden">
+      <h2>Nish Quiz</h2>
+      <p class="sub">Let’s see how well you know our memories</p>
+      <div id="questionBox"></div>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- Memory Section -->
+    <section id="memorySection" class="hidden">
+      <h2>Memory</h2>
+      <div id="memoryContent"></div>
+      <button id="closeMemoryBtn">Close Memory</button>
+    </section>
+
+    <!-- Final Result Section -->
+    <section id="finalSection" class="hidden">
+      <h2>Final Result</h2>
+      <p id="finalText"></p>
+      <div id="finalMedia"></div>
+    </section>
+
+  </div>
+
+  <!-- LIGHTBOX POPUP -->
+  <div id="lightboxOverlay" class="hidden"></div>
+  <div id="lightbox" class="hidden">
+    <button id="lightboxClose">✕</button>
+    <button id="lightboxPrev" class="lightboxArrow">◀</button>
+    <button id="lightboxNext" class="lightboxArrow">▶</button>
+    <div id="lightboxContent"></div>
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/22.mp3" type="audio/mp3">
+  </audio>
+  <button id="musicToggle">🎶</button>
+
+  <!-- SURPRISE MODAL -->
+  <div id="surpriseOverlay" class="hidden"></div>
+  <div id="surpriseModal" class="hidden">
+    <button id="surpriseClose">✕</button>
+    <h2>I hope you like it !</h2>
+    <video id="surpriseVideo" controls>
+      <source src="assets/videos/22.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
